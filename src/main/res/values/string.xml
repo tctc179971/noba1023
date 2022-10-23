@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Noba</string>
+    <string name="team_create_title">開設運動房</string>
+    <string name="casual_mode">休閒模式</string>
+    <string name="compete_mode">競爭模式</string>
+    <string name="team_title">組隊房間</string>
+    <string name="friend_title">好友列表</string>
+    <string name="rank_title">排位查看</string>
+
+    <string-array name="sports">
+        <item>排球</item>
+        <item>籃球</item>
+    </string-array>
+    <string-array name="volley_people">
+        <item>2</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="basketball_people">
+        <item>3</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="play_court_volley">
+        <item>洪四川體育場</item>
+        <item>第一排球場</item>
+        <item>第二排球場</item>
+    </string-array>
+    <string-array name="play_court_basket">
+        <item>洪四川體育場</item>
+        <item>綜合球場</item>
+        <item>工院球場</item>
+    </string-array>
+    <string-array name="game_type">
+        <item>籃球三對三</item>
+        <item>籃球五對五</item>
+        <item>排球二對二</item>
+        <item>排球六對六</item>
+    </string-array>
+</resources>
