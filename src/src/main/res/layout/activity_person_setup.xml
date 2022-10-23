@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    >
+
+    <LinearLayout
+        android:id="@+id/change_personal_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/change_username">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:rotationY="180"
+            android:src="@drawable/arrow_last" />
+
+
+        <TextView
+            android:id="@+id/personal_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="修改資料"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_personal_info_layout"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="修改使用者名稱"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/changed_username"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@color/prime_color_2"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/change_phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_username"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="修改電話號碼"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/changed_phone_num"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@color/prime_color_2"
+            android:inputType="phone"
+            android:digits="0123456789+"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/change_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_phone_num"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="修改e-mail"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/changed_email"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@color/prime_color_2"
+            android:inputType="textEmailAddress"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_email"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="修改生日"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/changed_birth"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:background="@color/prime_color_2"
+            android:inputType="date"
+            android:hint="YYYY/MM/DD"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/change_birth"
+        android:gravity="center_horizontal"
+        >
+
+        <Button
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/prime_color_2"
+            android:gravity="center"
+            android:text="確認"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+

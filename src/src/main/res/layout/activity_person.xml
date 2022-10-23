@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingTop="@dimen/padding_Top"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bg_sport"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/ll_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bg_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/cover" />
+
+                <TextView
+                    android:id="@+id/tv_title_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-185dp"
+                    android:gravity="center"
+                    android:text="揪愛Sport"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/tv_title_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="100dp"
+                    android:text="揪、愛、Sport ! "
+                    android:textColor="@color/white"
+                    android:textStyle="bold|italic" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_personinfo"
+                        android:layout_width="115dp"
+                        android:layout_height="115dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="25dp"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/user_pic"
+                        tools:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/image_3"
+                        android:layout_width="163dp"
+                        android:layout_height="163dp"
+                        android:layout_centerHorizontal="true"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/oval_1"
+                        tools:visibility="visible" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/tv_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LV 30/100"
+                    android:textSize="30sp"
+                    android:textColor="@color/teal_200"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+                <ProgressBar
+                    android:id="@+id/pb_exp"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/progressbar_bg" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="酷貓一隻"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_user_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="普通使用者"
+                    android:textColor="@color/purple_200"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/ll_1_2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="#FBF4E2"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_searchroom"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:alpha="0.9"
+                            android:background="@drawable/bg_circle"
+                            android:text="尋人組隊"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_createrroom"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:alpha="0.9"
+                            android:background="@drawable/bg_circle"
+                            android:text="開設房間"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_friends"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:alpha="0.9"
+                            android:background="@drawable/bg_circle"
+                            android:text="查看好友"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/btn_searchrank"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:alpha="0.9"
+                            android:background="@drawable/bg_circle"
+                            android:text="排位查看"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

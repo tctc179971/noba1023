@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+    <RelativeLayout
+        android:id="@+id/create_team"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundpic_room_search"
+        android:paddingTop="10dp"
+        >
+        <LinearLayout
+            android:id="@+id/rs_ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/arrow_team"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/arrow_last"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/creat_team_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="尋人組隊"
+                android:textSize="25sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/arrow_team"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rs_ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="40dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="150dp">
+
+            <LinearLayout
+                android:id="@+id/rs_ll_1_1"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_search_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/edit_text"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/search_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rs_ll_1_2"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自定義搜尋"
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rs_ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_roominfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="房間資訊"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rs_ll_2">
+            <ListView
+                android:id="@+id/lv_search_team"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
